@@ -1,102 +1,79 @@
-
+ 
+.name{
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 70px;
+  margin-bottom: 20px;
+}
 .logo {
-  position: relative;
-  top: 14px;
-  left: 50px;
-  font-weight: bold;
-  font-size: 25px;
-}
-
-.menu {
-  position: fixed;
-  top: 0;
-  right: 0;
-  align-self: flex-start;
-  font-family: var(--font-family);
-  color: #6070ff;
-  width: 40px;
-  height: 30px;
-}
-
-.menu_items {
-  position: fixed;
-  top: 0;
-  right: 0;
-  display: flex;
-  justify-content: flex-end;
-  text-decoration: none;
-}
-
-.menu_items li {
-  display: block;
-  margin: 10px;
-  text-align: right;
-}
-
-.both {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 7vh;
-  background-color: white;
-}
-
-.big-one {
-  position: absolute;
-  top: 28%;
-  left: 40%;
-  font-family: Arial, sans-serif; /* Added generic font family */
-  width: 280px;
   font-size: 30px;
-  font-weight: bold;
+  display: inline-block;
+  vertical-align: top;
 }
 
-.par {
-  position: absolute;
-  top: 45%;
-  left: 40%;
-  width: 280px;
-  display: block;
-  line-height: 24px;
-  font-size: 21px;
-  font-family: Arial, sans-serif; /* Added generic font family */
-}
+.menuIcon {
+  display: inline-block;
+   margin-top: 10px;
+  margin-left: 80px;
+  width: 60px;
+  height: 40px;
 
+}
 .connect {
-  position: absolute;
+  
   color: rgb(63, 63, 159);
-  top: 77%;
-  left: 40%;
+   margin-left: 100px;
+   transition: cursor 0.3s;
+   cursor: pointer;
 }
-
 .social {
-  position: absolute;
-  top: 85%;
-  left: 40%;
+  text-align: right;
+ 
 }
 
-@media (max-width: 767px) {
-  .menus {
-    display: none;
-  }
-
-  .background {
-    background-image: url("image/mobi2.png");
-    background-size: cover;
-  }
+.social a {
+  display: inline-block;
+  margin-left: 0;
 }
 
-@media (min-width: 768px) {
-  .menu {
-    display: none;
-  }
-
-  .background {
-    background-image: url("image/photo_2024-04-29_11-37-39.jpg");
-    font-family: Arial, sans-serif;
-  }
+.social img {
+  width: 30px;
+  height: 20px;
+  margin-left: 0px;
+  transition: cursor 0.3s;
+  cursor: pointer;
 }
 
+.first{
+  background-image: url("image/mobi2.png");
+  display: gird;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+  'one01'
+  'one11';
+  border: 0.5px solid rgb(121, 118, 118);
+  margin-bottom: 10px;
+  width: 300px;
+}
+.one{
+  display: flex;
+  flex-direction: column;
+  
+}
+.one01{
+  flex-direction: row;
+   
+  grid-area: one01;
+}
+.one11{
+   
+  flex-direction: column;
+   
+   width: auto;
+  grid-area: one01;
+  height: auto;
+}
 .btn,
 .btn1 {
   width: 120px;
@@ -106,6 +83,8 @@
   margin-bottom: 5px;
   border-radius: 10px;
   border: 3px solid rgb(87, 86, 84);
+  transition: cursor 0.3s;
+  cursor: pointer;
 }
 
 .image1 {
@@ -187,7 +166,7 @@
 .grid-container2 {
   display: grid;
   grid-template-columns: 1fr;
-  margin-top: 700px;
+   
   grid-template-rows: repeat(4, 1fr);
   grid-gap: 1rem;
   grid-template-areas:
@@ -206,7 +185,7 @@
   border: 1px solid rgb(53, 52, 51);
   align-items: center;
   cursor: pointer;
-  margin-left: 30%;
+   
   transition: cursor 0.3s;
 }
 
@@ -305,7 +284,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 30%;
+   
 }
 
 .page7 {
