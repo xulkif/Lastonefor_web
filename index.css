@@ -45,6 +45,7 @@
   cursor: pointer;
 }
 
+
 .first {
   background-image: url("image/mobi2.png");
   display: gird;
@@ -55,12 +56,14 @@
     'one11';
   border: 0.5px solid rgb(121, 118, 118);
   margin-bottom: 10px;
-  width: 300px;
+  width: auto;
 }
 
 .one {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .one01 {
@@ -195,25 +198,25 @@
 .page.page1 {
   grid-area: page1;
   background-color: #eaecf4;
-  width: 300px;
+  width: auto;
 }
 
 .page.page2 {
   grid-area: page2;
   background-color: #eaecf4;
-  width: 300px;
+  width: auto;
 }
 
 .page.page3 {
   grid-area: page3;
   background-color: #eaecf4;
-  width: 300px;
+  width: auto;
 }
 
 .page.page4 {
   grid-area: page4;
   background-color: #eaecf4;
-  width: 300px;
+  width: auto;
 }
 
 .mystory {
@@ -292,7 +295,7 @@
   background-image: url("image/blueone.jpg");
   background-size: cover; /* border-radius: 10px 0 0 10px;Optional: Adjust the background size as needed */
   background-color: #eaecf4;
-  width: 300px;
+  width: auto;
 }
 
 .page6 {
@@ -300,7 +303,7 @@
   grid-area: page_6;
   justify-content: center;
   background-color: #eaecf4;
-  width: 300px;
+  width: auto;
 }
 
 .topic {
